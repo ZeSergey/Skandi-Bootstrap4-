@@ -1,0 +1,174 @@
+@import "vars"
+.namePage
+    display: block
+    text-align: center
+    font-family: "PTSans-Bold"
+    text-transform: uppercase
+    font-size: 36px
+    margin: 70px auto 30px auto
+
+.aboutUs
+    display: block
+    margin: 0 auto
+    color: #5985c1
+    font-size: 24px
+    span
+        color: $text
+        font-family: "PTSans-Bold"
+.Benefits
+    margin-top: 70px
+
+.nameSection
+    display: block
+    text-align: center
+    font-family: "PTSans-Bold"
+    font-size: 24px
+    text-transform: uppercase
+    margin-bottom: 60px
+
+.benefitItems
+    margin-bottom: 80px
+    text-align: center
+    img
+        max-width: 158px 
+    span
+        display: block
+        text-align: center
+        font-family: PTSans-Regular
+        font-size: 20px
+.freeSize
+    background-image: url(../img/index/metr.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    height: 375px
+    .nameSection
+        font-family: PTSans-Regular
+        color: #ffffff
+        padding-top: 115px
+        font-size: 34px
+        margin-bottom: 0
+    .btn
+        margin: 34px auto 0 auto
+        transition: box-shadow 0.3s 
+        &:hover
+            box-shadow: 0 0 55px 10px rgba(255,255,255,0.78)
+.examples
+    a
+        margin-top: 24px
+        text-decoration: underline
+        color: $text
+        font-size: 24px
+    .nameSection
+        margin-top: 68px
+    .exampleItem
+        text-align: center
+        .price
+            p
+                font-family: PTSans-Regular
+                font-size: $textS
+                color: $text
+                span
+                    font-size: 30px
+                    font-family: "PTSans-Bold"
+.bb
+    position: relative
+    margin-bottom: 58px
+    .price
+        position: absolute
+        right: 50px
+        bottom: 14px
+.btnRed
+    margin: 0 auto
+    transition: box-shadow 0.3s 
+    &:hover
+        box-shadow: 0 0 55px 10px rgba(255,102,0,0.78)
+.eServ
+    text-align: center
+    margin-bottom: 15px
+    span
+        font-family: "PTSans-Bold"
+        font-size: 24px
+        display: block
+
+@media(max-width: 768px)
+    .aboutUs
+        font-size: 20px
+    .freeSize
+        .nameSection
+            font-size: 26px
+    .examples
+        .nameSection
+            margin: 30px auto
+    .bb
+        margin-bottom: 30px
+        .price
+            right: 12%
+            bottom: 5%
+
+@media(max-width: 576px)
+    .carousel
+        margin-bottom: 30px
+
+    .namePage
+        font-size: 26px
+        margin: 30px auto 30px auto
+    .aboutUs
+        font-size: 18px
+        
+    .Benefits
+        margin-top: 25px
+        .nameSection
+            margin-bottom: 20px
+    .nameSection
+        font-size: 20px
+            
+
+    .cl
+        display: none
+    .benefitItems
+        width: 30%
+        margin-bottom: 20px
+        img
+            max-width: 90px
+        span
+            font-size: 12px
+    .examples
+        a
+            font-size: 18px
+        .exampleItem
+            img
+                width: 80%
+            .price
+                p
+                    line-height: 1
+                    font-size: 18px
+                    span
+                        font-size: 24px
+    .bb
+        .price
+            right: 22%
+            bottom: 9%
+    .eServ
+        img
+            width: 80%
+
+@media(max-width: 450px)
+    .aboutUs
+        font-size: 12.5px
+    .Benefits
+        margin-top: 15px
+        .nameSection
+            margin-bottom: 10px
+    
+    .freeSize
+        .container
+            padding: 0
+        height: 250px
+        .nameSection
+            padding-top: 55px 
+            font-size: 18px
+    .bb
+        .price
+            right: 18%
+            bottom: 4%

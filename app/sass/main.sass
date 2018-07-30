@@ -1,0 +1,222 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@keyframes pulse 
+    from 
+        transform: scale3d(1.2, 1.2, 1.2)
+    50% 
+        transform: scale3d(1.05, 1.05, 1.05)
+    to 
+        transform: scale3d(1.2, 1.2, 1.2)
+  
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+li
+    list-style: none
+button
+    border: none
+    background: none
+    cursor: pointer
+    &:focus
+        outline: none
+.btn
+    display: block
+    color: #fff
+    font-family: 'PTSans-Bold'
+    text-transform: uppercase
+    font-size: 30px
+    background: #ffc000
+    width: 457px
+    height: 70px
+    border-radius: 60px
+
+.maxScreen
+    max-width: 1920px
+    margin: 10px auto 0 auto
+
+header
+    padding-top: 10px
+
+    .logo
+        max-width: 248px
+        height: auto
+    
+    .header-text
+        padding-top: 20px
+       
+
+    .number-phone
+        color: #2f5fa1
+        p
+            font-size: 24px
+            margin: 0
+            line-height: 1
+            span
+                font-size: 30px
+        img
+            margin-left: 7px
+            width: 36px
+            height: auto
+            animation: pulse 2s infinite
+    
+    .aCall
+        margin-right: 43px
+        color: #ff0000
+        text-transform: uppercase
+        text-decoration: underline
+        text-align: right
+        &:hover
+            text-decoration: none
+    nav
+        background-image: -webkit-linear-gradient( 0deg, rgb(248,210,11) 0%, rgb(119,163,222) 52%, rgb(38,81,141) 83%)
+        background-image: -ms-linear-gradient( 0deg, rgb(248,210,11) 0%, rgb(119,163,222) 52%, rgb(38,81,141) 83%)
+        height: auto
+
+        ul
+            min-height: 60px
+            margin-bottom: 0
+            
+            li
+                height: auto
+                a
+                    color: #ffffff
+                    font-family: "PTSans-Bold"
+                    font-size: 24px
+                    text-transform: uppercase
+                    transition: text-shadow 0.3s
+                    &:hover
+                        color: #fff
+                        text-decoration: none
+                        text-shadow: 0px 0px 6px rgba(31,63,106,0.9)
+                        
+                .active
+                    text-shadow: 0px 0px 6px rgba(255,255,255,0.7)
+.modal-content
+   background: #6f98d0
+   .close
+       padding: 0
+.modal-header
+    padding-bottom: 0
+    border: none
+    .modal-title
+        display: block
+        margin: 0 auto
+        text-align: center
+        color: #ffffff
+        font-size: 33px
+
+.modal-body
+    border: none
+    
+    img
+        position: absolute
+        top: -10px
+        right: -10px
+form
+    position: relative
+    input
+        font-size: 24px
+        border-radius: 20px
+        padding: 5px 15px
+    .btn
+        margin: 46px auto 0 auto
+        transition: box-shadow 0.3s
+        &:hover
+            box-shadow: 0 0 55px 10px rgba(255,255,255,0.78)
+
+footer
+    background-image: -webkit-linear-gradient( 0deg, rgb(248,210,11) 0%, rgb(119,163,222) 52%, rgb(38,81,141) 83%)
+    background-image: -ms-linear-gradient( 0deg, rgb(248,210,11) 0%, rgb(119,163,222) 52%, rgb(38,81,141) 83%)
+    min-height: 60px
+    color: #ffffff
+    .nameLog
+        font-family: MuseoCyrl-900Italic
+        font-size: 24px
+.n-footer
+    padding-top: 10px
+    p
+        font-size: 24px
+        margin: 0
+        line-height: 1
+        span
+            font-size: 30px
+        img
+            margin-left: 7px
+            width: 36px
+            height: auto
+
+.thx
+    display: none
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    // background:  #6f98d0
+    z-index: 10
+    span
+        margin: auto
+        text-transform: uppercase
+        font-size: 24px
+        color: #ffffff
+        font-family: 'PTSans-Bold'
+    &~*
+        transition: all .5s ease
+    &.active
+        &~*
+            opacity: .3
+            filter: blur(10px)
+.topButton
+    position: fixed
+    bottom: 20px
+    right: -100px
+    z-index: 20
+    opacity: 0.5
+    border-radius: 10em
+    border: 1px solid #cccccc
+    transition: all .3s ease
+    cursor: pointer
+    &:hover
+        opacity: 1
+    &.active
+        right: 20px
+
+        
+@import "media" // Always at the end
