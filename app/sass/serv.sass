@@ -1,0 +1,51 @@
+@import "vars"
+.services
+    max-width: 974px
+    margin: 0 auto
+    a
+        display: block
+        margin-bottom: 80px
+        font-size: 24px
+        color: $text
+        text-decoration: underline
+        transition: color .3s
+        &:hover
+            color: red
+.serv
+    position: relative
+    margin-bottom: 50px
+    img
+        max-width: 100%
+    .line
+        width: 100%
+        position: absolute
+        bottom: 0
+        background-color: rgba(0, 0, 0, 0.4)
+        span
+            color: #ffffff
+            font-size: 48px
+            font-family: "MuseoCyrl-700"
+            margin-left: 17px
+@media (max-width: 1200px)
+    .serv
+        .line
+            span
+                font-size: 30px
+
+@media (max-width: 768px)
+    .services
+        a
+            margin-bottom: 30px
+    .serv
+        .line
+            span
+                font-size: 24px
+
+@media (max-width: 576px)
+    .serv
+        margin-bottom: 25px
+        .line
+            span
+                font-size: 18px
+                display: block
+                text-align: center
